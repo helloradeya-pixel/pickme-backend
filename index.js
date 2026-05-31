@@ -10,7 +10,8 @@ const app = express()
 // =====================
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://pickme-frontend.vercel.app"
+  "https://pickme-frontend.vercel.app",
+  "https://selector.radeyaphoto.my.id"
 ]
 
 app.use(cors({
@@ -51,7 +52,7 @@ const supabase = createClient(
   process.env.SUPABASE_ANON_KEY
 )
 
-const CLIENT_URL = "https://pickme-frontend.vercel.app"
+const CLIENT_URL = "https://selector.radeyaphoto.my.id"
 
 // =====================
 // FETCH DRIVE FILES
